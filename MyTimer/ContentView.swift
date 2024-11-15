@@ -55,6 +55,10 @@ struct ContentView: View {
                     }
                 }
             }
+            .onAppear {
+                // 経過時間の変数を初期化
+                count = 0
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink{
